@@ -37,7 +37,7 @@ export function RegisterPage() {
       })
       message.success('注册成功，请登录')
       navigate('/login', { replace: true })
-    } catch (err) {
+    } catch (err: unknown) {
       setError(err instanceof Error ? err.message : '注册失败')
     } finally {
       setLoading(false)

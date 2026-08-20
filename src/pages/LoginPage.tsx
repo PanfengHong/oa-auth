@@ -39,7 +39,7 @@ export function LoginPage() {
       })
       message.success('登录成功，欢迎回来')
       navigate(redirect, { replace: true })
-    } catch (err) {
+    } catch (err: unknown) {
       setError(err instanceof Error ? err.message : '登录失败')
     } finally {
       setLoading(false)
