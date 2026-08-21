@@ -21,6 +21,8 @@ export const ALL_PERMISSIONS: Permission[] = [
   { key: 'designer:manage', name: '管理表单设计', description: '创建和编辑流程表单', module: '表单设计' },
   { key: 'user:manage', name: '用户管理', description: '管理用户和权限', module: '系统' },
   { key: 'user:roles', name: '角色管理', description: '管理角色和权限分配', module: '系统' },
+  { key: 'form:view', name: '查看表单', description: '查看流程表单', module: '表单设计' },
+  { key: 'form:manage', name: '管理表单', description: '创建和编辑流程表单', module: '表单设计' },
 ]
 
 export const ALL_ROLES: Role[] = [
